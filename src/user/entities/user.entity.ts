@@ -8,6 +8,9 @@ export class User {
 
     @Column("text")
     name:string
+   
+    @Column("text")
+    lastName:string
 
     @Column("text")
     email:string
@@ -16,10 +19,10 @@ export class User {
     password: string
 
     @CreateDateColumn()
-    crate_at: Date;
+    create_at: Date;
 
     @DeleteDateColumn()
-    deleted_at:string
+    deleted_at:Date
 
 
 }
